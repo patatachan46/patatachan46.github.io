@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>課題作成用サイト</title>
+<meta name="description" content="課題作成用は、半ば勢いでつくったサイトです。やると宣言した後にちょっとしまったと思ったサイトです。">
+<link rel="stylesheet" href="common/css/normalize.css">
+<link rel="stylesheet" href="common/css/style.css">
+
+<script src="/Users/koikesoushi/Desktop/wwwのコピー/common/jsのコピー/jquery-3.3.1.min.js"></script>
+<script src="/Users/koikesoushi/Desktop/wwwのコピー/common/jsのコピー/bxslider-4-4.2.12/dist/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="/Users/koikesoushi/Desktop/wwwのコピー/common/jsのコピー/bxslider-4-4.2.12/dist/jquery.bxslider.css">
+<script>
+$(document).ready(function() {
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    pause: 4000
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<header id="pageHead">
+	<h1 id="siteTitle">One More</h1>
+	<p id="catchcopy">教本をもとにつくってみた</p>
+	<nav class="globalNavi">
+		<ul>
+			<li class="current"><a href="index.html">ホーム</a></li>
+			<li><a href="about/index.html">私について</a></li>
+			<li><a href="portfolio/index.html">Motivation</a></li>
+			<li><a href="about/index.html"></a>お問い合わせ</li>
+		</ul>
+	</nav>
+</header>
+
+<div id="pageBody">
+	<section class="mainVisual">
+		<ul class="bxslider">
+			<li>
+				<div class="mainVisualText">
+					<h1>こんなトレーニングがしたい！</h1>
+					<p>No Pain! No Gain!</p>
+				</div>
+				<img src="/Users/koikesoushi/Desktop/wwwのコピー/images/pre-workout-bodybuilding-motivat.jpg" width="980" height="500" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>Light Weight Baby</h1>
+					<p>知る人ぞ知る名言</p>
+				</div>
+				<img src="/Users/koikesoushi/Desktop/wwwのコピー/images/flat,550x550,075,f.u1.jpg" width="980" height="500" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>One More</h1>
+					<p>One More Rep!!!</p>
+				</div>
+				<img src="/Users/koikesoushi/Desktop/wwwのコピー/images/9c7d00f14f45860276b94a64177d4059.jpg" width="980" height="500" alt="">
+			</li>
+		</ul>
+	</section>
+
+	<section class="portfolioIndex">
+		<article>
+			<a href="portfolio/03.html"><img src="/Users/koikesoushi/Desktop/wwwのコピー/images/man-of-iron-97-.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/03.html">Motivation</a></h2>
+			<p>ワークアウトのモチベーションを上げる動画！</p>
+		</article>
+		<article>
+			<a href="portfolio/02.html"><img src="/Users/koikesoushi/Desktop/wwwのコピー/images/39267979-vector-illustration-bodybuilder-doing-exercise-with-dumbbells-for-biceps.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/02.html">部位別筋トレについて</a></h2>
+			<p>部位別の筋トレ参考になるリンクを集めました！</p>
+		</article>
+		<article>
+			<a href="portfolio/01.html"><img src="/Users/koikesoushi/Desktop/wwwのコピー/images/wc1683114.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/01.html">食事について</a></h2>
+			<p>どんな食事を食べればいいのか参考リンク集</p>
+		</article>
+	</section>
+
+</div>
+
+<p class="pagetop"><a href="#page">ページのマッチョ(先頭)へ戻る</a></p>
+
+<footer id="pageFoot">
+	<p id="copyright"><small>Copyright&copy; 2019 @One More All Rights Reserved.</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>
