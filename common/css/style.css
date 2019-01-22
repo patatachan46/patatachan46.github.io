@@ -100,8 +100,6 @@ a:hover { color: #BDB76B; }
 /* ページボディ */
 #pageBody {
 	margin-top: 30px;
-	width: 980px;
-	margin: 0 auto;
 }
 #pageBody:after {
 	content: "";
