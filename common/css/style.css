@@ -108,8 +108,9 @@ a:hover { color: #BDB76B; }
 }
 
 #pageBodyMain {
-	width: 720px;
+	width: 100%;
 	float: left;
+	text-align: center;
 }
 
 /* ----- メインカラム内の装飾 ----- */
