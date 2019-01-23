@@ -338,6 +338,7 @@ a:hover { color: #BDB76B; }
 /* Homeの「Motivation」、「部位別筋トレ」、「食事について」 */
 #pageBody .portfolioIndex {
 	margin-top: 40px;
+	box-shadow: 10px 10px #CCCCCC
 }
 #pageBody .portfolioIndex:after {
 	content: "";
