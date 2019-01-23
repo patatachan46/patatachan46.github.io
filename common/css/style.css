@@ -369,7 +369,9 @@ a:hover { color: #BDB76B; }
 	
 }
 
-
+@media (max-width: 980vw) {
+	h1 {color: blue;}
+}
 
 
 
