@@ -127,28 +127,6 @@ a:hover { color: #BDB76B; }
 	line-height: 1.429;
 }
 
-/* 表 */
-#pageBodyMain table {
-	font-size: 14px;
-	line-height: 1.429;
-	border: 1px solid #CCCCCC;
-	border-collapse: collapse;
-	width: 100%;
-}
-#pageBodyMain table th,
-#pageBodyMain table td {
-	border: 1px solid #CCCCCC;
-	padding: 5px 10px;
-}
-#pageBodyMain table th {
-	background-color: #EEEEEE;
-	text-align: left;
-}
-#pageBodyMain table caption {
-	text-align: left;
-	font-weight: bold;
-}
-
 /* 図版 */
 #pageBodyMain figure {
 	margin: 0;
@@ -338,7 +316,7 @@ a:hover { color: #BDB76B; }
 /* Homeの「Motivation」、「部位別筋トレ」、「食事について」 */
 #pageBody .portfolioIndex {
 	margin-top: 40px;
-	box-shadow: 10px 10px #CCCCCC
+	box-shadow: 4px 4px 100px #CCCCCC
 }
 #pageBody .portfolioIndex:after {
 	content: "";
@@ -370,14 +348,37 @@ a:hover { color: #BDB76B; }
 	
 }
 
-@media (max-width: 980vw) {
-	h1 {color: blue;}
+/* 料金表 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  border-color: #999999;
 }
 
+.price th {
+	padding: 10px;
+	background-color:  #998F88;
+	color: white;
+}
 
+.price th:first-child {
+	background-color: #4A4643;
+	border-left: none;
+}
 
+ .price td {
+ 	padding: 10px;
+ 	background-color: #FFF;
+ }
 
+.price td:first-child {
+	background-color: #ECE9E4;
+}
 
+.price td:nth-child(2) {
+	color: red;
+}
 
 
 
