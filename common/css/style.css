@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500|Playfair+Display:400,700');
 
+/*-------全体にbox-sizing: border-boxを適用-------*/
+* {
+  box-sizing: border-box;
+}
 
 body { 
 	color: #000000; 
 	background-color: #E2E7CC;
 }
 
-/* リンク */
+/* ---------リンク---------- */
 a { 
 	color: #06236f;
 	text-decoration: none;
@@ -15,10 +19,10 @@ a {
 a:hover { color: #1d56c7; }
 
 
-/* パンくずリスト */
+/* ------パンくずリスト-------- */
 .topicPath { font-size: 12px; }
 
-/* ページの先頭へ戻る */
+/* -----ページの先頭へ戻る----- */
 .pagetop {
 	font-size: 12px;
 	text-align: right;
@@ -31,13 +35,13 @@ a:hover { color: #1d56c7; }
 	padding-left: 10px;
 }
 
-/*ページ*/
+/* --------ページ-----------*/
 #page {
 	width: 980px;
 	margin: 0 auto;
 }
 
-/* ページヘッダー */
+/* -------ページヘッダー--------- */
 #pageHead #siteTitle {
 	font-size: 30px;
 	line-height: 1.2;
@@ -51,7 +55,7 @@ a:hover { color: #1d56c7; }
 	font-family: 'Noto Serif TC', serif;
 }
 
-/* グローバルナビ */
+/* --------グローバルナビ--------- */
 #pageHead .globalNavi {
 	border: solid #CCCCCC;
 	border-width: 1px 0;
@@ -94,7 +98,7 @@ a:hover { color: #1d56c7; }
 	background-color: #b8c1a7;
 }
 
-/*ページフッター*/
+/*----------ページフッター--------------*/
 #pageFoot {
 	border-top: solid 1px #CCCCCC;
 	margin-top: 15px;
@@ -125,27 +129,38 @@ a:hover { color: #1d56c7; }
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1.429;
+	font-family: 'Playfair Display', serif;
 }
 
-/* リスト */
+/* About meのテキスト */
+#pageBodyMain .pageText p {
+	font-size: 15px;
+}
+
+/* ----------リスト------------- */
 #pageBodyMain ul li {
 	font-size: 14px;
 	list-style-type: none;
-	line-height: 1.429;z
+	text-align: center;
+	line-height: 1.429;
 }
 
-/* 図版 */
+#pageBodyMain .articleDetail .section ul li .linkName {
+	text-align: left;
+}
+
+/* ---------図版----------------- */
 #pageBodyMain figure {
 	margin: 0;
 }
-/* 画像キャプション */
+/* ----------画像キャプション---------- */
 #pageBodyMain figcaption {
 	font-size: 12px;
 }
 
-/* 見出し */
+/* ---------見出し------------- */
 #pageBodyMain .pageTitle {
 	font-size: 26px;
 	background-color: #F2F2E5;
@@ -153,6 +168,7 @@ a:hover { color: #1d56c7; }
 	line-height: 1.231;
 	margin-top: 0;
 	text-align: center;
+	font-family: 'Playfair Display', serif;
 }
 
 #pageBodyMain .heading-typeA {
@@ -174,7 +190,7 @@ a:hover { color: #1d56c7; }
 	line-height: 1.429;
 }
 
-/* 区切り線・余白 */
+/* ------区切り線・余白----------- */
 #pageBodyMain .articleDetailHead {
 	border-bottom: solid 1px #CCCCCC;
 	margin-bottom: 30px;
@@ -189,7 +205,7 @@ a:hover { color: #1d56c7; }
 	margin: 30px 0;
 }
 
-/* 撮影情報 */
+/* ----------撮影情報----------- */
 #pageBodyMain .creditUnit {
 	padding: 10px;
 	border: solid 1px #CCCCCC;
@@ -216,7 +232,7 @@ a:hover { color: #1d56c7; }
 	line-height: 1.5;
 }
 
-/* センター寄せ画像 */
+/*-------- About me センター寄せ画像 ----------*/
 #pageBodyMain .imageCenter {
 	text-align: center;
 	border-bottom: 1px dotted #CCCCCC;
@@ -224,7 +240,26 @@ a:hover { color: #1d56c7; }
 	margin: 30px 0;
 }
 
-/* 「おといあわせフォーム」ボタン */
+/*---------------ボックスシャドウ-----------------*/
+
+#pageBodyMain .imageCenter .picture {
+	box-shadow:5px 5px 15px 0px #717875;
+}
+
+#pageBodyMain .youtubepicture:hover {
+	box-shadow:5px 5px 15px 0px #717875;
+	transition: 0.5s;
+	opacity: 0.7;
+}
+
+#pageBody .portfolioIndex article .youtubepicture:hover {
+	box-shadow:5px 5px 15px 0px #717875;
+	transition: 0.5s;
+	opacity: 0.7;
+}
+
+
+/* ------「おといあわせフォーム」ボタン --------*/
 #pageBodyMain .btn {
 	text-align: center;
 	padding-bottom: 20px;
@@ -250,7 +285,7 @@ a:hover { color: #1d56c7; }
 }
 
 
-/* --「つくったもの」一覧ページ-- */
+/* ------「つくったもの」一覧ページ------- */
 #pageBodyMain .articleList {
 	border: solid 1px #CCCCCC;
 }
@@ -267,21 +302,29 @@ a:hover { color: #1d56c7; }
 	width: 100%;
 	text-align: center;
 }
+
+#pageBodyMain article {
+	padding-top: 20px;
+}
+
 #pageBodyMain .articleList h1 {
 	font-size: 24px;
 	line-height: 1.308;
 }
+
+#pageBodyMain article h2 {
+	font-size: 18px;
+}
+
 #pageBodyMain .articleList p {
 	font-size: 14px;
 	line-height: 1.429;
 }
 
 
-
-
-
 /* ----- トップページの内容 ----- */
-/* メインビジュアル */
+
+/* -----メインビジュアル ---------*/
 #pageBody .mainVisual {
 	position: relative;
 }
@@ -320,7 +363,7 @@ a:hover { color: #1d56c7; }
 	position: relative;
 }
 
-/* Homeの「Motivation」、「部位別筋トレ」、「食事について」 */
+/* ---「Motivation」、「部位別筋トレ」、「食事について」 ---*/
 #pageBody .portfolioIndex {
 	margin-top: 40px;
 }
@@ -343,17 +386,13 @@ a:hover { color: #1d56c7; }
 #pageBody .portfolioIndex article h2 {
 	font-size: 18px;
 	margin: 5px 0;
+	line-height: 1;
 }
 #pageBody .portfolioIndex article p {
 	margin-top: 0;
-	font-size: 12px;
-	line-height: 1.5;
+	font-size: 13px;
+	line-height: 1;
 	font-family: 'Noto Serif TC', serif;
-}
-
-/* Home→Muscle */
-#pageBody .pageBodyMain article {
-	
 }
 
 /* 料金表 */
@@ -388,11 +427,48 @@ table {
 	color: red;
 }
 
-/*--------- メディアクエリ -----------*/
+/*--------- メディアクエリ(スマホ用画面) -----------*/
+
+/*---------トップページ-----------------*/
 @media (max-width: 670px) {
 	#page {
 		width: 100%;
+		height: 100%;
 	}
+
+/*------------トップページの下のリンク---------------*/
+	#pageBody .portfolioIndex {
+		width: 33%;
+		height: 33%;
+	}
+
+/*----------トップページのメイン画像とテキスト---------*/
+	#pageBody .mainVisual .mainVisualText {
+		width: 50%;
+		height: 30%;
+	}
+
+	#pageBody .mainVisual .mainVisualText h2 {
+		width: 100%;
+		height: 100%
+	}
+
+	#pageBody .mainVisual .mainVisualText p {
+		width: 100%;
+		height: 100%;
+	}
+/*------------グローバルナビスマホ用----------------*/
+
+	#pageHead .globalNavi ul li {
+		width: 100%;
+		height: 100%;
+	}
+
+	#pageBodyMain .secton ul li .linkName {
+		text-align: left;
+		display: inline-block;
+	}
+
 }
 
 
