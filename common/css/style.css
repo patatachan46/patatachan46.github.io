@@ -371,6 +371,10 @@ a:hover { color: #1d56c7; }
 	margin-left: 40px;
 }
 
+#pageBody .portfolioIndex article:first-child {
+	margin-left: 0;
+}
+
 #pageBody .portfolioIndex article h2 {
 	font-size: 18px;
 	margin: 5px 0;
@@ -383,7 +387,7 @@ a:hover { color: #1d56c7; }
 	font-family: 'Noto Serif TC', serif;
 }
 
-/* 料金表 */
+/* -----------料金表------------------------- */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -393,7 +397,7 @@ table {
 
 .price th {
 	padding: 10px;
-	background-color:  #998F88;
+	background-color:  #4A4643;
 	color: white;
 }
 
@@ -405,6 +409,7 @@ table {
  .price td {
  	padding: 10px;
  	background-color: #FFF;
+ 	text-align: left;
  }
 
 .price td:first-child {
@@ -412,10 +417,150 @@ table {
 }
 
 .price td:nth-child(2) {
-	color: red;
+	color: #A83434;
 }
 
-/*--------- メディアクエリ(スマホ用画面) -----------*/
+.price th {
+	background-color: #998F88;
+}
+
+
+#pageBody .support {
+	float: left;
+	width: 250px;
+	font-size: 15px;
+	background-color: #ece9e4;
+	text-align: left;
+	padding-left: 15px;
+}
+
+#pageBody .icon-plus {
+	float: left;
+	width: 54px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#pageBody .icon-plus img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+
+
+
+
+/*--------------シェイプアッププログラム-----------------*/
+#pageBody .shapeUpProgram .eng {
+	border-top: solid 1px #998F88;
+	border-bottom: solid 1px #998F88;
+}
+
+#pageBody .shapeUpProgram .time {
+	color: #A28600;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #F1EDD9;
+	padding: 16px 22px;
+	line-height: 1;
+	position: absolute;
+	top: 660px;
+	right: 200px;
+}
+
+#pageBody .detail {
+	background-color: #F6F4F2;
+	padding: 28px 34px;
+	margin-bottom: 40px;
+	margin-top: 80px;
+}
+
+#pageBody .shapeUpProgram .ph img {
+	float: right;
+}
+
+#pageBody .shapeUpProgram .ph p {
+margin-top: 40px;
+}
+
+#pageBody .price {
+	float: left;
+}
+
+#pageBody .cf {
+	zoom: 1;
+}
+
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#pageBody .cf .fbtn {
+	float: left; 
+	width: 32%;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-right: 10px
+}
+
+#pageBody .cf .obtn {
+	float: left; 
+	width: 32%;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-right: 10px
+}
+
+#pageBody .cf .cbtn {
+	float: left; 
+	width: 32%;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-right: 10px
+}
+
+#pageBody .description {
+	font-size: 12px;
+	margin-top: 215px;
+	margin-bottom: 50px;
+	line-height: 1.6;
+}
+
+#pageBody .support .name {
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#pageBody .support .impo {
+	font-size: 12px;
+}
+
+#pageBody .support .impo span {
+	font-size: 15px;
+	color: #A83434;
+}
+
+#pageBody .support .small {
+	font-size: 12px;
+}
+
+#pageBody .chu {
+	font-size: 12px;
+}
+
+
+/*メディアクエリ(スマホ用画面)*/
 
 /*---------トップページ-----------------*/
 @media (max-width: 670px) {
@@ -429,6 +574,10 @@ table {
 		width: 33%;
 		height: 33%;
 	}
+
+	#pageBody .portfolioIndex article:first-child {
+	margin-left: 40px;
+}
 
 /*----------トップページのメイン画像とテキスト---------*/
 	#pageBody .mainVisual .mainVisualText {
